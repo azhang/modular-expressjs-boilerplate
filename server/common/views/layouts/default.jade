@@ -1,0 +1,20 @@
+doctype html
+- var itemscope = "itemscope"
+- var itemtype = "http://schema.org/WebPage"
+html(lang='en', xmlns='http://www.w3.org/1999/xhtml', xmlns:fb='https://www.facebook.com/2008/fbml', itemscope=itemscope, itemtype=itemtype)
+  include ../includes/head
+  body
+    block header
+      include ../includes/header
+
+    block content
+
+    block footer
+      include ../includes/footer
+
+    block scripts
+      script(type="text/javascript", src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.1/js/vendor/jquery.js")
+      script(type="text/javascript", src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.1/js/foundation.min.js")
+
+      script(type="text/javascript").
+        $(document).foundation();
